@@ -156,25 +156,3 @@ bar {
 }
 exec "setxkbmap -layout us,ru"
 exec "setxkbmap -option 'grp:ctrl_shift_toggle'"
-
-
-set $ws1 1
-set $ws2 2
-set $ws3 3
-set $ws4 4
-set $ws5 5
-set $ws6 6
-set $ws7 7
-set $ws8 8
-set $ws9 9
-
-
-##==================================================##
-#                         *** Workspace specific settings ***                     #
-##=================================================##
-# Assign Workspaces:
-assign [class="Chromium"] $ws1
-assign [class="vim"] $ws2
-assign [class="terminal"] $ws3
-assign [class="terminal"] $ws4
-exec_always 'Chromium'
