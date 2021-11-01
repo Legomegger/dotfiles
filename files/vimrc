@@ -133,6 +133,7 @@ Plug 'iamcco/markdown-preview.nvim', { 'do': { -> mkdp#util#install() } }
 
 " Plug 'chrisbra/csv.vim'
 Plug 'ekalinin/Dockerfile.vim'
+Plug 'gruvbox-community/gruvbox'
 
 " \ 'coc-docker', https://github.com/neoclide/coc.nvim/pull/2756
 " \ 'coc-tabnine',
@@ -178,7 +179,8 @@ filetype plugin on
 " Enable hotkeys for Russian layout
 set langmap=ФИСВУАПРШОЛДЬТЩЗЙКЫЕГМЦЧНЯ;ABCDEFGHIJKLMNOPQRSTUVWXYZ,фисвуапршолдьтщзйкыегмцчня;abcdefghijklmnopqrstuvwxyz
 
-silent! colorscheme jellybeans
+" silent! colorscheme jellybeans
+silent! colorscheme gruvbox
 
 " set visualbell
 " set completeopt=noinsert,menuone,noselect
@@ -210,7 +212,9 @@ endif
 set number
 set hlsearch
 set ignorecase
-" set smartcase
+set relativenumber
+set smartcase
+set incsearch
 
 " Turn backup off, since most stuff is in SVN, git et.c anyway...
 " set nobackup
@@ -243,7 +247,7 @@ set ignorecase
 " set cmdheight=2
 " " TODO: replace with "number" when new neovim will be released
 set signcolumn=yes
-set scrolloff=3
+set scrolloff=6
 
 " Keep undo history across sessions, by storing in file.
 "silent !mkdir /tmp/.vim/backups > /dev/null 2>&1
