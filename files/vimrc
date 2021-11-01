@@ -140,6 +140,7 @@ Plug 'gruvbox-community/gruvbox'
 " https://github.com/phpactor/coc-phpactor use when become popular
 let g:coc_global_extensions = [
       \ 'coc-cspell-dicts',
+      \ 'coc-clangd',
       \ 'coc-markdownlint',
       \ 'coc-prisma',
       \ 'coc-spell-checker',
