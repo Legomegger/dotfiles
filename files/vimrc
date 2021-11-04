@@ -15,7 +15,7 @@ call plug#begin('~/.vim/plugged')
 "" MUST BE
 " Plug 'tpope/vim-sensible'
 " git support
-" Plug 'tpope/vim-fugitive'
+Plug 'tpope/vim-fugitive'
 Plug 'honza/vim-snippets'
 " advanced welcome screen
 Plug 'mhinz/vim-startify'
@@ -268,6 +268,7 @@ nnoremap <expr> л (v:count == 0 ? 'gk' : 'k')
 nnoremap <expr> о (v:count == 0 ? 'gj' : 'j')
 
 noremap <C-m> :make<CR>
+nnoremap Y y$
 
 " Map ctrl-movement keys to window switching
 map <C-k> <C-w><Up>
