@@ -337,6 +337,11 @@ nmap <silent> // :nohlsearch<CR>
 nmap     <leader>fr <Plug>CtrlSFPrompt
 
 nnoremap <leader>S :lua require('spectre').open()<CR>
+nnoremap <silent> <leader>0 :let @" = expand("%")<CR>
+nnoremap <leader>gg :Git<CR>
+nnoremap <leader>gp :Git push 
+nnoremap <leader>ge :Git commit --allow-empty -m 
+nnoremap <leader>gs :Git status<CR>
 
 "set spell spelllang=en_us,ru_ru
 
