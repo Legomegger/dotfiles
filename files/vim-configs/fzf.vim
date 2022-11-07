@@ -19,3 +19,4 @@ nnoremap <silent><nowait> <leader>b :Buffers<CR>
 nnoremap <silent><nowait> <leader>p :GFiles --cached --others --exclude-standard<CR>
 nnoremap <silent><nowait> <leader>g :GGrep<CR>
 nnoremap <silent><nowait> <leader>r :Rg<CR>
+let g:fzf_layout = { 'down': '~40%' }

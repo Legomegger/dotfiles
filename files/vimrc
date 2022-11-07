@@ -31,8 +31,8 @@ Plug 'tpope/vim-repeat'
 Plug 'nanotech/jellybeans.vim'
 Plug 'dyng/ctrlsf.vim'
 Plug 'vim-airline/vim-airline'
-Plug 'tpope/vim-projectionist'
-Plug 'dense-analysis/ale'
+" Plug 'tpope/vim-projectionist'
+" Plug 'dense-analysis/ale'
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
 "Plug 'antoinemadec/coc-fzf', {'branch': 'release'}
 Plug 'tpope/vim-endwise'
@@ -67,7 +67,7 @@ Plug 'tpope/vim-bundler'
 " Plug 'tpope/vim-haml'
 " Plug 'slim-template/vim-slim'
 
-Plug 'pantharshit00/vim-prisma'
+" Plug 'pantharshit00/vim-prisma'
 
 " Plug 'lxhillwind/leader-clipboard'
 " Plug 'ConradIrwin/vim-bracketed-paste'
@@ -91,11 +91,11 @@ Plug 'lepture/vim-jinja'
 " Plug 'vim-erlang/vim-erlang-runtime'
 " Plug 'vim-erlang/vim-erlang-compiler'
 " Auto close parentheses and repeat by dot dot dot...
-Plug 'c-brenn/phoenix.vim'
+" Plug 'c-brenn/phoenix.vim'
 
 " Plug 'jwalton512/vim-blade'
-Plug 'noahfrederick/vim-composer'
-Plug 'noahfrederick/vim-laravel'
+" Plug 'noahfrederick/vim-composer'
+" Plug 'noahfrederick/vim-laravel'
 
 " Plug 'rhysd/vim-clang-format'
 " Plug 'tpope/vim-ragtag'
@@ -106,7 +106,7 @@ Plug 'noahfrederick/vim-laravel'
 
 Plug 'pangloss/vim-javascript'
 Plug 'maxmellon/vim-jsx-pretty'
-Plug 'udalov/kotlin-vim'
+" Plug 'udalov/kotlin-vim'
 
 " Plug 'moll/vim-node'
 " Plug 'mattn/emmet-vim', { 'for': 'html' }
@@ -116,7 +116,7 @@ Plug 'udalov/kotlin-vim'
 " Plug 'Valloric/MatchTagAlways'
 
 " Plug 'plasticboy/vim-markdown'
-Plug 'dhruvasagar/vim-table-mode'
+" Plug 'dhruvasagar/vim-table-mode'
 Plug 'iamcco/markdown-preview.nvim', { 'do': { -> mkdp#util#install() } }
 
 " Plug 'michaeljsmith/vim-indent-object'
@@ -338,14 +338,14 @@ nmap     <leader>fr <Plug>CtrlSFPrompt
 
 nnoremap <leader>S :lua require('spectre').open()<CR>
 nnoremap <silent> <leader>0 :let @" = expand("%")<CR>
-nnoremap <leader>gg :Git<CR>
-nnoremap <leader>gp :Git push 
-nnoremap <leader>ge :Git commit --allow-empty -m 
-nnoremap <leader>gs :Git status<CR>
+nnoremap <leader>j :Git<CR>
+nnoremap <leader>jp :Git push 
+nnoremap <leader>je :Git commit --allow-empty -m 
+nnoremap <leader>js :Git status<CR>
 
 "set spell spelllang=en_us,ru_ru
 
-source ~/dotfiles/files/vim-configs/ale.vim
+" source ~/dotfiles/files/vim-configs/ale.vim
 source ~/dotfiles/files/vim-configs/coc.vim
 source ~/dotfiles/files/vim-configs/fzf.vim
 source ~/dotfiles/files/vim-configs/nerdtree.vim
